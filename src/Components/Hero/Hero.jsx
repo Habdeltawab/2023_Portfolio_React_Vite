@@ -42,26 +42,11 @@ const CustomBox = styled(Box)({
   },
 });
 
-/**
- * 
- * @returns 
- * content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background: black;
-    opacity: 0.5;
- */
-
 const Hero = () => {
   return (
     <CustomSection className='hero-section'>
       <CustomBox>
-        <h1 style={{zIndex: 1}}>Hello hosam</h1>
+        <h1 style={{ zIndex: 1 }}>Hello hosam</h1>
       </CustomBox>
     </CustomSection>
   );
