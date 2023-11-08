@@ -27,7 +27,7 @@ const CustomBox = styled(Box)({
   alignItems: 'center',
   justifyContent: 'center',
   color: 'white',
-  backgroundImage: 'url(./img/hero-image.jpeg)',
+  backgroundImage: 'url(./img/bg.jpg)',
   backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
