@@ -1,5 +1,5 @@
 import { styled } from '@mui/system';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const CustomSection = styled('section')({
   backgroundColor: '#141414',
@@ -10,6 +10,9 @@ const CustomSection = styled('section')({
   position: 'relative',
   opacity: 1,
   visibility: 'visible',
+  display: 'flex', // add this
+  justifyContent: 'center', // add this
+  alignItems: 'center', // add this
 });
 
 const CustomBox = styled(Box)({
@@ -46,7 +49,35 @@ const Hero = () => {
   return (
     <CustomSection className='hero-section'>
       <CustomBox>
-        <h1 style={{ zIndex: 1 }}>Hello hosam</h1>
+        <Box
+          sx={{
+            zIndex: 2,
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2rem',
+            maxWidth: '1080px',
+          }}
+        >
+          <Typography variant='h1' fontWeight='bold' sx={{ zIndex: 1 }}>
+            I&apos;m Hosam Abdeltawab
+          </Typography>
+          <Typography
+            variant='h5'
+            align='center'
+            color='white'
+            sx={{ color: 'rgba(255, 255, 255, 0.6)' }}
+          >
+            I&apos;m a{' '}
+            <span style={{ color: 'white', opacity: 1 }}>
+              Software Engineer
+            </span>{' '}
+            who creates awesome and effective applications for companies of all
+            sizes. Let&apos;s{' '}
+            <span style={{ color: 'white', opacity: 1 }}>start scrolling</span>{' '}
+            and learn more{' '}
+            <span style={{ color: 'white', opacity: 1 }}>about me.</span>
+          </Typography>
+        </Box>
       </CustomBox>
     </CustomSection>
   );
